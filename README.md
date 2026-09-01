@@ -85,20 +85,20 @@ log-monitoring-app
 ## Monitoring
 
 ### CloudWatch provides:
-
+```text
 -Application log collection
 -EC2 CPU monitoring
 -High CPU alarm
-
+```
 ### Alarm:
-
+```text
 -Alarm: EC2-High-CPU-Alarm
 -Threshold: CPU Utilization > 80%
 -Period: 5 minutes
 -Statistic: Average
-
+```
 ## Key Learning Outcomes
-
+```text
 -AWS EC2 deployment
 -Amazon S3 integration
 -IAM Roles and least-privilege access
@@ -108,11 +108,12 @@ log-monitoring-app
 -Linux administration
 -Troubleshooting AWS and Docker issues
 -Git/GitHub version control
-
+```
 ## Future Improvements
-
+```text
 -Automate S3 log retrieval
 -Add GitHub Actions CI/CD
 -Add Terraform infrastructure provisioning
 -Add SNS notifications
 -Process multiple log files automatically
+```
