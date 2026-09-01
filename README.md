@@ -57,7 +57,7 @@ ERROR    : 3
 ```
 
 ## Project Structure
-
+```text
 aws-log-monitoring-project/
 │
 ├── app/
@@ -69,7 +69,7 @@ aws-log-monitoring-project/
 ├── Dockerfile
 ├── .gitignore
 └── README.md
-
+```
 ## Docker
 
 ### Build the image:
@@ -81,35 +81,38 @@ docker build -t log-monitoring-app .
 docker run --name log-monitoring-container \
 -v "$(pwd)/logs:/app/logs" \
 log-monitoring-app
-Monitoring
 
-## CloudWatch provides:
+## Monitoring
 
-Application log collection
-EC2 CPU monitoring
-High CPU alarm
+### CloudWatch provides:
+
+-Application log collection
+-EC2 CPU monitoring
+-High CPU alarm
 
 ### Alarm:
 
-EC2-High-CPU-Alarm
-CPU Utilization > 80%
+-Alarm: EC2-High-CPU-Alarm
+-Threshold: CPU Utilization > 80%
+-Period: 5 minutes
+-Statistic: Average
 
 ## Key Learning Outcomes
 
-AWS EC2 deployment
-Amazon S3 integration
-IAM Roles and least-privilege access
-Docker containerization
-AWS CLI
-CloudWatch monitoring and alarms
-Linux administration
-Troubleshooting AWS and Docker issues
-Git/GitHub version control
+-AWS EC2 deployment
+-Amazon S3 integration
+-IAM Roles and least-privilege access
+-Docker containerization
+-AWS CLI
+-CloudWatch monitoring and alarms
+-Linux administration
+-Troubleshooting AWS and Docker issues
+-Git/GitHub version control
 
 ## Future Improvements
 
-Automate S3 log retrieval
-Add GitHub Actions CI/CD
-Add Terraform infrastructure provisioning
-Add SNS notifications
-Process multiple log files automatically
+-Automate S3 log retrieval
+-Add GitHub Actions CI/CD
+-Add Terraform infrastructure provisioning
+-Add SNS notifications
+-Process multiple log files automatically
