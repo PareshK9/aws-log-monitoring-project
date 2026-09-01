@@ -1,0 +1,8 @@
+INFO User login successful
+INFO File uploaded
+ERROR Database connection failed
+INFO Email sent
+ERROR Invalid credentials
+WARNING Disk usage 75%
+INFO Logout successful
+ERROR API timeout

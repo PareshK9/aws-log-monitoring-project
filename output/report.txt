@@ -1,0 +1,7 @@
+===== LOG PROCESSING REPORT =====
+
+INFO     : 4
+WARNING  : 1
+ERROR    : 3
+
+===============================
